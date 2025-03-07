@@ -183,6 +183,7 @@ def inject_PJL_commands(directory):
             shutil.copyfileobj(f, temp_file)
 
         shutil.copy("./temp.prn", file)
+        send_LPR_file(file)
     return
 
 
